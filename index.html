@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de contacto</title>
+
+    <style type="text/css">
+        @import '/style.css';
+    </style>
+</head>
+<body>
+
+    <div class = "formulario_contacto">
+        <div class = "formulario">
+            <h1>Formulario de contacto</h1>
+            <h3>Detalla tu problema para ponernos en contacto contigo y darle solución lo antes posible a tu problema</h3>
+
+
+            <form action="/principal.html" method="post">
+                <p>
+                    <label for="nombre" class="colocar_nombre">Nombre 
+                        <span class="obligatorio">*</span>
+                    </label>
+                    <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escriba su nombre">
+                </p>
+                <p>
+                    <label for="email" class="colocar_email">Correo Electronico
+                        <span class="obligatorio">*</span>
+                    </label>
+                    <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Ingrese su correo">
+                </p>
+                <p>
+                    <label for="telefone" class="colocar_telefono">Telefono/Celular</label>
+                    <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
+                </p>
+                <p>
+                    <label for="mensaje" class="colocar_mensaje">Mensaje
+                        <span class="obligatorio">*</span>
+                    </label>
+                    <textarea name="introducir_mensaje" class="introducir_mensaje" id="mensaje" required="obligatorio" placeholder="Escriba su problema..."></textarea>
+                </p>
+
+                <button type="submit" name="envia_formulario" id="enviar" ><p>Enviar</p></button>
+
+                <button type="submit" name="pagina_siguiente" id="abrir" onclick="window.location.href='/principal.html'"><p>Abrir pagina</p></button>
+
+                <p class="Advertencia">
+                    <span class="obligatorio">*</span>Hay campos que son obligatorios
+                </p>
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>
